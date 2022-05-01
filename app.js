@@ -1,26 +1,24 @@
-// strings 
-console.log('Hello, world');
+// switch statements
 
-let email = 'mario@thenetninja.co.uk';
-console.log(email);
+const grade = 'D';
 
-// string concatentation
-let firstName = 'Moe';
-let lastName = 'Almossa';
+switch(grade){
 
-let fullName = firstName + '' + lastName;
-console.log(fullName);
+    case 50:
+        console.log('you got an A!');
+        break;
+    case 'B':
+        console.log('you got an B!');
+        break;
+    case 'C':
+        console.log('you got an C!');
+    case 'D':
+        console.log('you got an D!');
+        break;
+    case 'E':
+        console.log('you got an E!');
+    break;
+    default:
+        console.log('not a valid grade');
+}
 
-// getting characters 
-console.log(fullName[0]);
-
-// string length 
-console.log(fullName.length);
-
-// string methods
-console.log(fullName.toLocaleUpperCase());
-let result = fullName.toLocaleLowerCase();
-console.log(result, fullName);
-
-let index = email.indexOf("@");
-console.log(index);
